@@ -1,0 +1,11 @@
+[Desktop Entry]
+Comment[en_US]=The Ashire Desktop Environment
+Exec=/usr/local/bin/start-ade.sh
+GenericName[en_US]=The Ashire Desktop Environment
+GenericName=The Ashire Desktop Environment
+Name[en_US]=Ashire
+Name=Ashire
+StartupNotify=true
+Terminal=false
+Type=Application
+
