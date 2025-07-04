@@ -1,0 +1,10 @@
+
+# Exclude QMake files
+*.pro linguist-language=!
+
+# Exclude CMake files
+CMakeLists.txt linguist-language=!
+*.cmake linguist-language=!
+
+# Exclude Shell scripts
+*.sh linguist-language=!
