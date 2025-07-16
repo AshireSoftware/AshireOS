@@ -29,8 +29,8 @@ void Panel::refreshWindows()
         "Ashire Start Menu",
         "Ashire Panel",
         "plasmashell",
-        "Desktop @",
-        "@!0,0;BDHF"
+        "@!0,0;BDHF",
+        "Desktop @"
     };
 
     m_windows.clear();
