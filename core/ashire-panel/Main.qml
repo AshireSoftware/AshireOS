@@ -6,7 +6,7 @@ import QtQuick.Effects
 
 ApplicationWindow {
     flags: Qt.Window | Qt.FramelessWindowHint | Qt.WindowDoesNotAcceptFocus | Qt.Tool
-    opacity: 0.9
+    opacity: 0.95
     visible: true
     width: Screen.width
     height: 50
@@ -14,6 +14,8 @@ ApplicationWindow {
     title: "Ashire Panel"
     y: Screen.height - height
     color: darkmacdarkest
+
+    // panel top line
     background: Rectangle {
         color: titlebarcolor
         height: 2
