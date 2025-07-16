@@ -26,8 +26,9 @@ void Panel::refreshWindows()
 {
     // List of program titles to ignore
     static const QStringList ignoreList = {
-        "plasmashell",
+        "Ashire Start Menu",
         "Ashire Panel",
+        "plasmashell",
         "Desktop @",
         "@!0,0;BDHF"
     };
