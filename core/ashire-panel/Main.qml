@@ -6,19 +6,28 @@ import QtQuick.Effects
 
 ApplicationWindow {
     flags: Qt.Window | Qt.FramelessWindowHint | Qt.WindowDoesNotAcceptFocus | Qt.Tool
-    opacity: 0.9
+    opacity: 0.8
     visible: true
     width: Screen.width
     height: 50
     maximumHeight: 50
     title: "Ashire Panel"
     y: Screen.height - height
-
+    color: darkmacdarkest
+    background: Rectangle {
+        color: titlebarcolor
+        height: 2
+    }
     // Window variable
     property string prevFocusedId: ""
 
     // Clock variable
     property string currentTime: ""
+
+    // Color variables
+    property string titlebarcolor: "#363636"
+    property string darkmacdarkest: "#1e1e1e"
+    property string darkmacdark: "#292929"
 
     RowLayout {
         spacing: 4
@@ -35,12 +44,14 @@ ApplicationWindow {
         Button {
             text: "+"
             font.pixelSize: 30
-            Layout.preferredWidth: 42
-            Layout.preferredHeight: 42
+            Layout.preferredWidth: 40
+            Layout.preferredHeight: 40
+            background: Rectangle {
+                color: darkmacdark
+            }
             onClicked: {
                 panel.openStartMenu()
             }
-
         }
 
         // Timer for panel (updates panel elements)
@@ -58,6 +69,9 @@ ApplicationWindow {
         Repeater {
             model: panel.windows
             delegate: Button {
+                background: Rectangle {
+                    color: darkmacdark
+                }
                 text: modelData.title
                 focusPolicy: Qt.NoFocus
                 property string winId: modelData.id
@@ -118,10 +132,14 @@ ApplicationWindow {
         // Clock
         Button {
           Layout.preferredWidth: 90
-          Layout.preferredHeight: 42
+          Layout.preferredHeight: 40
           text: currentTime
           font.pixelSize: 20
+          background: Rectangle {
+              color: darkmacdark
+          }
         }
+
         // Initialize time
         Component.onCompleted: {
           var date = new Date()
