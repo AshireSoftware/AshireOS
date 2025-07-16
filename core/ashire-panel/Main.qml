@@ -6,7 +6,7 @@ import QtQuick.Effects
 
 ApplicationWindow {
     flags: Qt.Window | Qt.FramelessWindowHint | Qt.WindowDoesNotAcceptFocus | Qt.Tool
-    opacity: 0.8
+    opacity: 0.9
     visible: true
     width: Screen.width
     height: 50
@@ -18,6 +18,7 @@ ApplicationWindow {
         color: titlebarcolor
         height: 2
     }
+
     // Window variable
     property string prevFocusedId: ""
 
@@ -37,7 +38,7 @@ ApplicationWindow {
 
         // Spacer between left side of screen and start menu
         Item {
-          Layout.preferredWidth: 2
+            Layout.preferredWidth: 2
         }
 
         // Start button
@@ -56,13 +57,13 @@ ApplicationWindow {
 
         // Timer for panel (updates panel elements)
         Timer {
-          id: panelTimer
-          interval: 100
-          running: true
-          repeat: true
-          onTriggered: {
+            id: panelTimer
+            interval: 100
+            running: true
+            repeat: true
+            onTriggered: {
             panel.refreshWindows()
-          }
+            }
         }
 
         // Pannel listing running programs
@@ -113,31 +114,31 @@ ApplicationWindow {
 
         // Spacer
         Item {
-          Layout.fillWidth: true
+            Layout.fillWidth: true
         }
 
         // Timer for clock (updates time)
         Timer {
-          id: timer
-          interval: 500
-          running: true
-          repeat: true
-          onTriggered: {
+            id: timer
+            interval: 500
+            running: true
+            repeat: true
+            onTriggered: {
             // Update currentTime with the current system time
             var date = new Date()
             currentTime = Qt.formatTime(date, "hh:mm")
-          }
+            }
         }
 
         // Clock
         Button {
-          Layout.preferredWidth: 90
-          Layout.preferredHeight: 40
-          text: currentTime
-          font.pixelSize: 20
-          background: Rectangle {
-              color: darkmacdark
-          }
+            Layout.preferredWidth: 90
+            Layout.preferredHeight: 40
+            text: currentTime
+            font.pixelSize: 20
+            background: Rectangle {
+            color: darkmacdark
+            }
         }
 
         // Initialize time
@@ -148,7 +149,7 @@ ApplicationWindow {
 
         // Spacer between clock and right side of screen
         Item {
-          Layout.preferredWidth: 2
+            Layout.preferredWidth: 2
         }
     }
 }
