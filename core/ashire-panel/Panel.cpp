@@ -28,7 +28,8 @@ void Panel::refreshWindows()
     static const QStringList ignoreList = {
         "plasmashell",
         "Ashire Panel",
-        "Desktop @"
+        "Desktop @",
+        "@!0,0;BDHF"
     };
 
     m_windows.clear();
