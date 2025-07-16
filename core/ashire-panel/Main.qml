@@ -137,7 +137,7 @@ ApplicationWindow {
             text: currentTime
             font.pixelSize: 20
             background: Rectangle {
-            color: darkmacdark
+            color: darkmacdarkest
             }
         }
 
