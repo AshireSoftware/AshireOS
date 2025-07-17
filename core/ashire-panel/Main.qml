@@ -48,7 +48,7 @@ ApplicationWindow {
 
         // Start button
         Button {
-            text: "+"
+            text: "Ω"
             font.pixelSize: 30
             Layout.preferredWidth: 40
             Layout.preferredHeight: 40
