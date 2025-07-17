@@ -3,7 +3,6 @@
 #include <QDebug>
 #include <iostream>
 #include <cstdio>
-#include <memory>
 #include <string>
 #include "Panel.h"
 

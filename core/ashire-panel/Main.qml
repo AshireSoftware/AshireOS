@@ -27,6 +27,9 @@ ApplicationWindow {
     // Clock variable
     property string currentTime:    ""
 
+    // Date variable
+    property string currentDate:    ""
+
     // Color variables
     property string titlebarcolor:  "#363636"
     property string darkmacdarkest: "#1e1e1e"
@@ -138,18 +141,37 @@ ApplicationWindow {
             onTriggered: {
             // Update currentTime with the current system time
             var date = new Date()
-            currentTime = Qt.formatTime(date, "hh:mm")
+            // Update clock
+            currentTime = Qt.formatTime(date, "h:mm ap")
+            // Update date
+            currentDate = Qt.formatDate(date, "dd.MM.yyyy")
             }
         }
 
-        // Clock
         Button {
-            Layout.preferredWidth: 90
-            Layout.preferredHeight: 40
-            text: currentTime
-            font.pixelSize: 20
-            background: Rectangle {
-            color: darkmacdarkest
+            width: 100
+            height: 40
+            background: darkmacdarkest
+            contentItem: Column {
+                anchors.fill: parent
+                spacing: 2
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
+                // Clock
+                Text {
+                    text: currentTime
+                    font.pointSize: 10
+                    color: "white"
+                    anchors.horizontalCenter: parent.horizontalCenter
+
+                }
+                // Date
+                Text {
+                    text: currentDate
+                    font.pointSize: 10
+                    color: "white"
+                    anchors.horizontalCenter: parent.horizontalCenter
+                }
             }
         }
 
