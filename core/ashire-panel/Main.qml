@@ -28,9 +28,9 @@ ApplicationWindow {
     property string currentTime: ""
 
     // Color variables
-    property string titlebarcolor: "#363636"
+    property string titlebarcolor:  "#363636"
     property string darkmacdarkest: "#1e1e1e"
-    property string darkmacdark: "#292929"
+    property string darkmacdark:    "#292929"
 
     RowLayout {
         spacing: 4
