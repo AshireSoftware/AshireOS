@@ -80,7 +80,17 @@ ApplicationWindow {
                 property string winId: modelData.id
                 Layout.preferredWidth: 175
                 Layout.preferredHeight: 36
-
+                contentItem: Text {
+                        text: parent.text
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.left: parent.left
+                        anchors.leftMargin: 12
+                        elide: Text.ElideRight
+                        color: "white"
+                        horizontalAlignment: Text.AlignLeft
+                        verticalAlignment: Text.AlignVCenter
+                        width: parent.width
+                    }
                 onClicked: {
                     // Convert IDs to int for comparison
                     var prevIdHex = panel.getPrevFocusedId()
