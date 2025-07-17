@@ -22,10 +22,10 @@ ApplicationWindow {
     }
 
     // Window variable
-    property string prevFocusedId: ""
+    property string prevFocusedId:  ""
 
     // Clock variable
-    property string currentTime: ""
+    property string currentTime:    ""
 
     // Color variables
     property string titlebarcolor:  "#363636"
@@ -155,8 +155,8 @@ ApplicationWindow {
 
         // Initialize time
         Component.onCompleted: {
-          var date = new Date()
-          currentTime = Qt.formatTime(date, "hh:mm")
+            var date = new Date()
+            currentTime = Qt.formatTime(date, "hh:mm")
         }
 
         // Spacer between clock and right side of screen
