@@ -2,6 +2,8 @@
 
 # Set x11 (or XLibre)
 export XDG_SESSION_TYPE=x11
+export XDG_CURRENT_DESKTOP=Ashire
+export DESKTOP_SESSION=Ashire
 
 # Start the Ashire window manager
 # ashire-window-manager &
