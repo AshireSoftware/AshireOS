@@ -48,7 +48,7 @@ ApplicationWindow {
 
         // Start button
         Button {
-            text: "Ω"
+            //text: "Ω"
             font.pixelSize: 30
             Layout.preferredWidth: 40
             Layout.preferredHeight: 40
@@ -57,6 +57,12 @@ ApplicationWindow {
             }
             onClicked: {
                 panel.openStartMenu()
+            }
+            Image {
+                height: 40
+                width: 40
+                source: "qrc:/Images/start.svg"
+                fillMode: Image.PreserveAspectFit
             }
         }
 
@@ -127,6 +133,8 @@ ApplicationWindow {
             }
         }
 
+
+
         // Spacer
         Item {
             Layout.fillWidth: true
@@ -147,7 +155,7 @@ ApplicationWindow {
             currentDate = Qt.formatDate(date, "dd.MM.yyyy")
             }
         }
-
+        // Display time
         Button {
             width: 100
             height: 40

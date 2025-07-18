@@ -19,6 +19,12 @@ qt_add_qml_module(appashire-panel
     VERSION 1.0
     QML_FILES
         Main.qml
+        RESOURCES Resources.qrc
+)
+
+qt_add_resources(appashire-panel "icons"
+    PREFIX="/"
+    FILES Images/start.svg
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
