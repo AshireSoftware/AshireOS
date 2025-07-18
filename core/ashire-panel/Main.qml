@@ -61,7 +61,7 @@ ApplicationWindow {
             Image {
                 height: 40
                 width: 40
-                source: "qrc:/Images/start.svg"
+                source: "qrc:/Images/start.png"
                 fillMode: Image.PreserveAspectFit
             }
         }
@@ -89,11 +89,20 @@ ApplicationWindow {
                 property string winId: modelData.id
                 Layout.preferredWidth: 175
                 Layout.preferredHeight: 36
+                Image {
+                    anchors.leftMargin: 8
+                    height: 20
+                    width: 20
+                    source: "qrc:/Images/placeholder.png"
+                    fillMode: Image.PreserveAspectFit
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.left: parent.left
+                }
                 contentItem: Text {
                         text: parent.text
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
-                        anchors.leftMargin: 12
+                        anchors.leftMargin: 32
                         elide: Text.ElideRight
                         color: "white"
                         horizontalAlignment: Text.AlignLeft
