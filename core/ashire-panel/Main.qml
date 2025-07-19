@@ -43,17 +43,18 @@ ApplicationWindow {
 
         // Spacer between left side of screen and start menu
         Item {
-            Layout.preferredWidth: 2
+            Layout.preferredWidth: 4
         }
 
         // Start button
         Button {
-            //text: "Ω"
+            id: startButton
             font.pixelSize: 30
             Layout.preferredWidth: 40
             Layout.preferredHeight: 40
             background: Rectangle {
-                color: darkmacdark
+                color: startButton.hovered ? darkmacdark : darkmacdarkest
+                radius: 4
             }
             onClicked: {
                 panel.openStartMenu()
@@ -79,10 +80,13 @@ ApplicationWindow {
 
         // Pannel listing running programs
         Repeater {
+            id: panelButtons
             model: panel.windows
             delegate: Button {
                 background: Rectangle {
-                    color: darkmacdark
+                    // TODO: change color when hovering over button
+                    color: panelButtons.hovered ? "red" : darkmacdark
+                    radius: 4
                 }
                 text: modelData.title
                 focusPolicy: Qt.NoFocus
@@ -142,8 +146,6 @@ ApplicationWindow {
             }
         }
 
-
-
         // Spacer
         Item {
             Layout.fillWidth: true
@@ -166,6 +168,7 @@ ApplicationWindow {
         }
         // Display time
         Button {
+            id: timeButton
             width: 100
             height: 40
             background: darkmacdarkest
@@ -180,7 +183,6 @@ ApplicationWindow {
                     font.pointSize: 10
                     color: "white"
                     anchors.horizontalCenter: parent.horizontalCenter
-
                 }
                 // Date
                 Text {
