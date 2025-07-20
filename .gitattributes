@@ -1,4 +1,7 @@
 
+# Exclude QML files
+*.qml linguist-language=!
+
 # Exclude QMake files
 *.pro linguist-language=!
 
