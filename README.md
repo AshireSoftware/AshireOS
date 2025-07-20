@@ -1,15 +1,15 @@
 # AshireOS
 
-<p style="text-align: center;">
+<p align="center">
   <img src="https://libplus.it/wp-content/uploads/2020/11/Schermata-2020-11-28-alle-16.24.00.png" alt="image" style="max-width: 100px; max-height: 100px; width: 100px; height: 100px; object-fit: cover; display: inline-block;"/>
 </p>
 
- <p style="text-align: center;">
+<p align="center">
    <b> The Ashire Operating System </b>
 </p>
 
 
- <p style="text-align: center;">
+<p align="center">
    A modern and beginner friendly linux-based operating system with it's own Desktop Environment.
 </p>
 
