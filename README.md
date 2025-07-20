@@ -1,7 +1,7 @@
 # AshireOS
 
 <p align="center">
-    <img src="core/ashire-start-menu/Images/pfp.png" alt="image" style="max-width: 100px; max-height: 100px; width: 100px; height: 100px; object-fit: cover; display: inline-block;"/>
+  <img src="logo.png" alt="Centered Image" width="100" height="100" style="border: 2px solid black; border-radius: 10px;">
 </p>
 
 <p align="center">
