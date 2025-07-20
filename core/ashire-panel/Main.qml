@@ -6,7 +6,7 @@ import QtQuick.Effects
 
 ApplicationWindow {
     flags: Qt.Window | Qt.FramelessWindowHint | Qt.WindowDoesNotAcceptFocus | Qt.Tool
-    opacity: 0.95
+    opacity: 0.9
     visible: true
     width: Screen.width
     height: 50
@@ -92,7 +92,7 @@ ApplicationWindow {
                 text: modelData.title
                 focusPolicy: Qt.NoFocus
                 property string winId: modelData.id
-                Layout.preferredWidth: 175
+                Layout.preferredWidth: 200
                 Layout.preferredHeight: 36
                 Image {
                     anchors.leftMargin: 8
