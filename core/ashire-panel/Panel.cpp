@@ -116,11 +116,13 @@ void Panel::openStartMenu()
     if (!isProgramRunning(program)) {
         system("ashire-start-menu &");
         std::cout << "Started the start menu process" << std::endl;
+        system("sleep 0.25 && wmctrl -a \"Ashire Panel\"");   // Moves focus from Start Menu to Panel
     }
 
     // kill start menu instances if at least one exists
     else {
         system("killall ashire-start-menu");
         std::cout << "Killed the start menu process" << std::endl;
+        system("sleep 0.25 && wmctrl -a \"Ashire Panel\"");   // Moves focus from Start Menu to Panel
     }
 }
