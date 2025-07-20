@@ -1,7 +1,7 @@
 # AshireOS
 
 <p align="center">
-  <img src="logo.png" alt="Centered Image" width="100" height="100" style="border: 2px solid black; border-radius: 10px;">
+  <img src="logo.jpg" alt="logo" width="100" height="100" style="border: 2px solid black; border-radius: 10px;">
 </p>
 
 <p align="center">
