@@ -17,8 +17,9 @@ ApplicationWindow {
 
     // panel top line
     background: Rectangle {
+        y: 2
         color: titlebarcolor
-        height: 2
+        height: 1
     }
 
     // Window variable
