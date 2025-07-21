@@ -162,7 +162,7 @@ ApplicationWindow {
             // Update currentTime with the current system time
             var date = new Date()
             // Update clock
-            currentTime = Qt.formatTime(date, "h:mm ap")
+            currentTime = Qt.formatTime(date, "h:mm AP")
             // Update date
             currentDate = Qt.formatDate(date, "dd.MM.yyyy")
             }
@@ -198,7 +198,7 @@ ApplicationWindow {
         // Initialize time
         Component.onCompleted: {
             var date = new Date()
-            currentTime = Qt.formatTime(date, "hh:mm")
+            currentTime = currentTime
         }
 
         // Spacer between clock and right side of screen
