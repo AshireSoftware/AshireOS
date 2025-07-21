@@ -22,7 +22,7 @@
 ### Dependencies:
 
 ```
-sudo apt install wmctrl openbox picom alacritty g++ libx11-dev libxinerama-dev libxrandr-dev cmake make
+sudo apt install wmctrl openbox picom alacritty g++ xserver-xephyr libx11-dev libxinerama-dev libxrandr-dev cmake make
 ```
 
 You will also need to install QT Quick.
