@@ -167,31 +167,30 @@ ApplicationWindow {
             currentDate = Qt.formatDate(date, "dd.MM.yyyy")
             }
         }
-        // Display time
-        Button {
-            id: timeButton
+
+        Item {
+            id: timeArea
             width: 100
             height: 40
-            background: darkmacdarkest
-            contentItem: Column {
-                anchors.fill: parent
-                spacing: 2
+            // Display the current time
+            Text {
+                id: currentTimeText
+                text: currentTime
+                color: "white"
+                anchors.top: parent.top
                 anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
-                // Clock
-                Text {
-                    text: currentTime
-                    font.pointSize: 10
-                    color: "white"
-                    anchors.horizontalCenter: parent.horizontalCenter
-                }
-                // Date
-                Text {
-                    text: currentDate
-                    font.pointSize: 10
-                    color: "white"
-                    anchors.horizontalCenter: parent.horizontalCenter
-                }
+                anchors.topMargin: 2
+                font.pixelSize: 14
+            }
+            // Display the current date
+            Text {
+                id: currentDateText
+                text: currentDate
+                color: "white"
+                anchors.top: timeText.bottom
+                anchors.topMargin: 2
+                anchors.horizontalCenter: parent.horizontalCenter
+                font.pixelSize: 14
             }
         }
 
