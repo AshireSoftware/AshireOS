@@ -5,7 +5,7 @@ import QtQuick.Window
 import QtQuick.Effects
 
 ApplicationWindow {
-    flags: Qt.Window | Qt.FramelessWindowHint | Qt.WindowDoesNotAcceptFocus | Qt.Tool
+    flags: Qt.Window | Qt.FramelessWindowHint | Qt.Tool | Qt.WindowStaysOnTopHint
     opacity: 0.9
     visible: true
     width: Screen.width
