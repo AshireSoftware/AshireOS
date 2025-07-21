@@ -329,6 +329,7 @@ ApplicationWindow {
             }
             onClicked: {
                 console.log("Shutting down");
+                startmenu.shutdownComputer()
             }
         }
     }

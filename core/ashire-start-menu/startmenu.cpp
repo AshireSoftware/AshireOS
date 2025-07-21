@@ -15,6 +15,11 @@ void StartMenu::killStartMenu(void)
     std::system("killall \"ashire-start-menu\" &");
 }
 
+void StartMenu::shutdownComputer(void)
+{
+    std::system("shutdown now");
+}
+
 void StartMenu::runDefaultBrowser(void)
 {
     std::system("xdg-open https://google.com &");

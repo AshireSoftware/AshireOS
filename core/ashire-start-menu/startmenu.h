@@ -12,6 +12,7 @@ public:
 public slots:
     void test();
     void killStartMenu();
+    void shutdownComputer();
     void runDefaultBrowser();
     void runTerminal();
     void openHomeFolder();
