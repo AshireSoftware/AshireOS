@@ -167,30 +167,34 @@ ApplicationWindow {
             currentDate = Qt.formatDate(date, "dd.MM.yyyy")
             }
         }
-
+        // Display the clock
         Item {
-            id: timeArea
+            id: clockArea
             width: 100
             height: 40
             // Display the current time
             Text {
-                id: currentTimeText
                 text: currentTime
                 color: "white"
-                anchors.top: parent.top
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.topMargin: 2
+                x: 0
+                y: 2
+                width: 100
+                height: 20
                 font.pixelSize: 14
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
             }
-            // Display the current date
+            // Display the currend date
             Text {
-                id: currentDateText
                 text: currentDate
                 color: "white"
-                anchors.top: timeText.bottom
-                anchors.topMargin: 2
-                anchors.horizontalCenter: parent.horizontalCenter
+                x: 0
+                y: 20
+                width: 100
+                height: 20
                 font.pixelSize: 14
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
             }
         }
 
