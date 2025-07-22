@@ -23,6 +23,7 @@ public:
 public slots:
     void openStartMenu();
     bool isProgramRunning(const std::string &programName);
+    void openNetworkManager();
 signals:
     void windowsChanged();
 

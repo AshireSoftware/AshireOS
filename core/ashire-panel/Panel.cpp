@@ -125,3 +125,10 @@ void Panel::openStartMenu()
         std::cout << "Killed the start menu process" << std::endl;
     }
 }
+
+void Panel::openNetworkManager()
+{
+    system("killall nm-connection-editor");
+    system("nm-connection-editor &");
+}
+

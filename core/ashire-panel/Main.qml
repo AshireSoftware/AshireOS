@@ -169,6 +169,9 @@ ApplicationWindow {
                     source: "qrc:/Images/wifi.png"
                     anchors.centerIn: parent
                 }
+                onClicked: {
+                    panel.openNetworkManager()
+                }
             }
         }
 
