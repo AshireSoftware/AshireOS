@@ -17,7 +17,7 @@ ApplicationWindow {
 
     // panel top line
     background: Rectangle {
-        y: 2
+        y: 1
         color: titlebarcolor
         height: 1
     }
