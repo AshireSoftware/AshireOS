@@ -152,6 +152,47 @@ ApplicationWindow {
             Layout.fillWidth: true
         }
 
+        // Internet controls
+        Item {
+            id: internetArea
+            Button {
+                id: internetButton
+                x: -50
+                width: 30
+                height: 30
+                anchors.verticalCenter: parent.verticalCenter
+                background: Rectangle {
+                    color: internetButton.hovered ? darkmacdark : darkmacdarkest
+                    radius: 4
+                }
+                contentItem: Image {
+                    source: "qrc:/Images/wifi.png"
+                    anchors.centerIn: parent
+                }
+            }
+        }
+
+        // Audio controls
+        Item {
+            id: audioArea
+            Button {
+                id: audioButton
+                x: -20
+                width: 30
+                height: 30
+                anchors.verticalCenter: parent.verticalCenter
+                background: Rectangle {
+                    color: audioButton.hovered ? darkmacdark : darkmacdarkest
+                    radius: 4
+                }
+                contentItem: Image {
+                    source: "qrc:/Images/audio.png"
+                    horizontalAlignment: Button.AlignHCenter
+                    verticalAlignment: Button.AlignVCenter
+                }
+            }
+        }
+
         // Timer for clock (updates time)
         Timer {
             id: timer
@@ -167,6 +208,7 @@ ApplicationWindow {
             currentDate = Qt.formatDate(date, "dd.MM.yyyy")
             }
         }
+
         // Display the clock
         Item {
             id: clockArea
