@@ -126,9 +126,18 @@ void Panel::openStartMenu()
     }
 }
 
+void Panel::openBatterySettings()
+{
+}
+
 void Panel::openNetworkManager()
 {
     system("killall nm-connection-editor");
     system("nm-connection-editor &");
 }
+
+void Panel::openAudioSettings()
+{
+}
+
 

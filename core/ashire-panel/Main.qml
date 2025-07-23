@@ -152,21 +152,44 @@ ApplicationWindow {
             Layout.fillWidth: true
         }
 
+        // Battery
+        Item {
+            id: batteryArea
+            Button {
+                id: batteryButton
+                x: -55
+                width: 26
+                height: 26
+                anchors.verticalCenter: parent.verticalCenter
+                background: Rectangle {
+                    color: batteryButton.hovered ? darkmacdark : darkmacdarkest
+                    radius: 4
+                }
+                contentItem: Image {
+                    source: "qrc:/Images/battery.png"
+                    anchors.centerIn: parent
+                }
+                onClicked: {
+                    panel.openBatterySettings()
+                }
+            }
+        }
+
         // Internet controls
         Item {
             id: internetArea
             Button {
                 id: internetButton
-                x: -50
-                width: 30
-                height: 30
+                x: -35
+                width: 24
+                height: 24
                 anchors.verticalCenter: parent.verticalCenter
                 background: Rectangle {
                     color: internetButton.hovered ? darkmacdark : darkmacdarkest
                     radius: 4
                 }
                 contentItem: Image {
-                    source: "qrc:/Images/wifi.png"
+                    source: "qrc:/Images/signal.svg"
                     anchors.centerIn: parent
                 }
                 onClicked: {
@@ -180,18 +203,21 @@ ApplicationWindow {
             id: audioArea
             Button {
                 id: audioButton
-                x: -20
-                width: 30
-                height: 30
+                x: -15
+                width: 24
+                height: 24
                 anchors.verticalCenter: parent.verticalCenter
                 background: Rectangle {
                     color: audioButton.hovered ? darkmacdark : darkmacdarkest
                     radius: 4
                 }
                 contentItem: Image {
-                    source: "qrc:/Images/audio.png"
+                    source: "qrc:/Images/audio.svg"
                     horizontalAlignment: Button.AlignHCenter
                     verticalAlignment: Button.AlignVCenter
+                }
+                onClicked: {
+                    panel.openAudioSettings()
                 }
             }
         }

@@ -24,6 +24,8 @@ public slots:
     void openStartMenu();
     bool isProgramRunning(const std::string &programName);
     void openNetworkManager();
+    void openAudioSettings();
+    void openBatterySettings();
 signals:
     void windowsChanged();
 
