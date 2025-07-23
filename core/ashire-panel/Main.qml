@@ -42,9 +42,9 @@ ApplicationWindow {
         anchors.fill: parent
         Layout.alignment: verticalCenter
 
-        // Spacer between left side of screen and start menu
+        // Remove padding between start of panel and start button
         Item {
-            Layout.preferredWidth: 4
+            Layout.preferredWidth: 0
         }
 
         // Start button
