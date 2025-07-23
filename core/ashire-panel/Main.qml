@@ -287,7 +287,8 @@ ApplicationWindow {
                     border.color: titlebarcolor
                 }
                 onClicked: {
-                    panel.minimizeAllWindows()
+                    // TODO: Make minimizeAllWindows() ignore the panel
+                    //panel.minimizeAllWindows()
                 }
                 onHoveredChanged: {
                     panel.showDesktop()
