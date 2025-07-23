@@ -1,6 +1,7 @@
 .directory
 *.swp
 *.d
+*~
 Makefile
 .qmake.cache
 .qmake.super
