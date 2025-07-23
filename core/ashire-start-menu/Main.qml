@@ -69,9 +69,8 @@ ApplicationWindow {
             height: 60
             text: "Web Browser"
             background: Rectangle {
-                color: browserButton.hovered ? darkmacdark : darkmacdarkest
-                border.color: darkmacdark
-                border.width: 1
+                color: browserButton.hovered ? darkmacdark : darkmacdark
+                border.color: browserButton.hovered ? "white" : titlebarcolor
                 radius: 4
             }
             contentItem: Text {
@@ -98,9 +97,8 @@ ApplicationWindow {
             height: 60
             text: "Terminal"
             background: Rectangle {
-                color: terminalButton.hovered ? darkmacdark : darkmacdarkest
-                border.color: darkmacdark
-                border.width: 1
+                color: terminalButton.hovered ? darkmacdark : darkmacdark
+                border.color: terminalButton.hovered ? "white" : titlebarcolor
                 radius: 4
             }
             contentItem: Text {
@@ -164,9 +162,8 @@ ApplicationWindow {
             text: "Kiwi"
             // TODO: Use a template or array
             background: Rectangle {
-                color: usernameButton.hovered ? darkmacdark : darkmacdarkest
-                border.color: darkmacdark
-                border.width: 1
+                color: usernameButton.hovered ? darkmacdark : darkmacdark
+                border.color: usernameButton.hovered ? "white" : titlebarcolor
                 radius: 4
             }
             contentItem: Text {
@@ -193,9 +190,8 @@ ApplicationWindow {
             height: 40
             text: "Documents"
             background: Rectangle {
-                color: documentsButton.hovered ? darkmacdark : darkmacdarkest
-                border.color: darkmacdark
-                border.width: 1
+                color: documentsButton.hovered ? darkmacdark : darkmacdark
+                border.color: documentsButton.hovered ? "white" : titlebarcolor
                 radius: 4
             }
             contentItem: Text {
@@ -224,9 +220,8 @@ ApplicationWindow {
             height: 40
             text: "Pictures"
             background: Rectangle {
-                color: picturesButton.hovered ? darkmacdark : darkmacdarkest
-                border.color: darkmacdark
-                border.width: 1
+                color: picturesButton.hovered ? darkmacdark : darkmacdark
+                border.color: picturesButton.hovered ? "white" : titlebarcolor
                 radius: 4
             }
             contentItem: Text {
@@ -255,9 +250,8 @@ ApplicationWindow {
             height: 40
             text: "Videos"
             background: Rectangle {
-                color: videosButton.hovered ? darkmacdark : darkmacdarkest
-                border.color: darkmacdark
-                border.width: 1
+                color: videosButton.hovered ? darkmacdark : darkmacdark
+                border.color: videosButton.hovered ? "white" : titlebarcolor
                 radius: 4
             }
             contentItem: Text {
@@ -286,9 +280,8 @@ ApplicationWindow {
             height: 40
             text: "Music"
             background: Rectangle {
-                color: musicButton.hovered ? darkmacdark : darkmacdarkest
-                border.color: darkmacdark
-                border.width: 1
+                color: musicButton.hovered ? darkmacdark : darkmacdark
+                border.color: musicButton.hovered ? "white" : titlebarcolor
                 radius: 4
             }
             contentItem: Text {
@@ -322,9 +315,8 @@ ApplicationWindow {
                 color: "white"
             }
             background: Rectangle {
-                color: shutdownButton.hovered ? darkmacdark : darkmacdarkest
-                border.color: darkmacdark
-                border.width: 1
+                color: shutdownButton.hovered ? darkmacdark : darkmacdark
+                border.color: shutdownButton.hovered ? "white" : titlebarcolor
                 radius: 4
             }
             onClicked: {
