@@ -24,11 +24,11 @@ ApplicationWindow {
 
     // Window variable
     property string prevFocusedId:  ""
-    property string currentTime:    "0:00 AM"
-    property string currentDate:    "00.00.2025"
     property string titlebarcolor:  "#363636"
     property string darkmacdarkest: "#1e1e1e"
     property string darkmacdark:    "#292929"
+    property string currentTime:    "0:00 AM"
+    property string currentDate:    "00.00.2025"
 
     RowLayout {
         spacing: 4
