@@ -81,6 +81,7 @@ ApplicationWindow {
                 background: Rectangle {
                     // TODO: change color when hovering over button
                     color: panelButtons.hovered ? "red" : darkmacdark
+                    border.color: titlebarcolor
                     radius: 4
                 }
                 text: modelData.title
