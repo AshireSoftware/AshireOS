@@ -238,6 +238,12 @@ ApplicationWindow {
             }
         }
 
+        // Initialize time
+        Component.onCompleted: {
+            var date = new Date()
+            currentTime = currentTime
+        }
+
         // Display the clock
         Item {
             id: clockArea
@@ -269,13 +275,27 @@ ApplicationWindow {
             }
         }
 
-        // Initialize time
-        Component.onCompleted: {
-            var date = new Date()
-            currentTime = currentTime
+        Item {
+            id: showDesktopButton
+            Button {
+                Rectangle {
+                    x: -4
+                    y: -24
+                    width: 16
+                    height: 49
+                    color: darkmacdark
+                    border.color: titlebarcolor
+                }
+                onClicked: {
+                    panel.minimizeAllWindows()
+                }
+                onHoveredChanged: {
+                    panel.showDesktop()
+                }
+            }
         }
 
-        // Spacer between clock and right side of screen
+        // Spacer between showDesktopButton and right side of screen
         Item {
             Layout.preferredWidth: 2
         }

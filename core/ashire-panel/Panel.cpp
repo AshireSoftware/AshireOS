@@ -140,4 +140,12 @@ void Panel::openAudioSettings()
 {
 }
 
+// TODO: Make minimizeAllWindows() ignore the panel
+void Panel::minimizeAllWindows()
+{
+    system("wmctrl -m | grep 'OFF$' && wmctrl -k on || wmctrl -k off");
+}
 
+void Panel::showDesktop()
+{
+}

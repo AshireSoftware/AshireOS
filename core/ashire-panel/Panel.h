@@ -26,6 +26,8 @@ public slots:
     void openNetworkManager();
     void openAudioSettings();
     void openBatterySettings();
+    void minimizeAllWindows();
+    void showDesktop();
 signals:
     void windowsChanged();
 
