@@ -152,7 +152,7 @@ ApplicationWindow {
             id: internetArea
             Button {
                 id: internetButton
-                x: -70
+                x: -62
                 width: 24
                 height: 24
                 anchors.verticalCenter: parent.verticalCenter
@@ -175,7 +175,7 @@ ApplicationWindow {
             id: audioArea
             Button {
                 id: audioButton
-                x: -45
+                x: -41
                 width: 24
                 height: 24
                 anchors.verticalCenter: parent.verticalCenter
