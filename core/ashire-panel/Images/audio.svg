@@ -26,20 +26,20 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="46.4375"
-     inkscape:cx="8.0215343"
-     inkscape:cy="8.0215343"
-     inkscape:window-width="1920"
-     inkscape:window-height="1008"
-     inkscape:window-x="0"
-     inkscape:window-y="44"
-     inkscape:window-maximized="1"
+     inkscape:cx="7.2139973"
+     inkscape:cy="8.064603"
+     inkscape:window-width="1351"
+     inkscape:window-height="928"
+     inkscape:window-x="115"
+     inkscape:window-y="42"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg6" />
   <g
      fill="#363636"
      stroke-linecap="round"
      stroke-linejoin="round"
      stroke-width="2.001"
-     style="paint-order:stroke fill markers;fill:#ffffff"
+     style="paint-order:stroke fill markers;fill:#ffffff;fill-opacity:1"
      aria-label=""
      id="g4">
     <path
@@ -47,6 +47,6 @@
        fill="#363636"
        stroke-width="2.001"
        id="path2"
-       style="fill:#ffffff" />
+       style="fill:#ffffff;fill-opacity:1" />
   </g>
 </svg>

@@ -26,13 +26,13 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="46.4375"
-     inkscape:cx="8.0215343"
-     inkscape:cy="8.0215343"
-     inkscape:window-width="1920"
-     inkscape:window-height="1008"
-     inkscape:window-x="0"
-     inkscape:window-y="44"
-     inkscape:window-maximized="1"
+     inkscape:cx="7.5585464"
+     inkscape:cy="8.064603"
+     inkscape:window-width="1351"
+     inkscape:window-height="928"
+     inkscape:window-x="283"
+     inkscape:window-y="61"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg115" />
   <path
      d="m2 3c-1.108 0-2 0.892-2 2v6c0 1.108 0.892 2 2 2h11c1.108 0 2-0.892 2-2v-2h1v-2h-1v-2c0-1.108-0.892-2-2-2zm0 1h11c0.554 0 1 0.446 1 1v6c0 0.554-0.446 1-1 1h-11c-0.554 0-1-0.446-1-1v-6c0-0.554 0.446-1 1-1z"
@@ -40,7 +40,7 @@
      stroke-linecap="round"
      stroke-linejoin="round"
      stroke-width="1.5"
-     style="paint-order:stroke fill markers;fill:#ffffff"
+     style="paint-order:stroke fill markers;fill:#ffffff;fill-opacity:1"
      id="path111" />
   <rect
      x="2"
@@ -53,6 +53,6 @@
      stroke-linecap="round"
      stroke-linejoin="round"
      stroke-width="1.5"
-     style="paint-order:stroke fill markers;fill:#ffffff"
+     style="paint-order:stroke fill markers;fill:#ffffff;fill-opacity:1"
      id="rect113" />
 </svg>

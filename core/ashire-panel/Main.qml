@@ -147,35 +147,12 @@ ApplicationWindow {
             Layout.fillWidth: true
         }
 
-        // Battery
-        Item {
-            id: batteryArea
-            Button {
-                id: batteryButton
-                x: -55
-                width: 26
-                height: 26
-                anchors.verticalCenter: parent.verticalCenter
-                background: Rectangle {
-                    color: batteryButton.hovered ? darkmacdark : darkmacdarkest
-                    radius: 4
-                }
-                contentItem: Image {
-                    source: "qrc:/Images/battery.png"
-                    anchors.centerIn: parent
-                }
-                onClicked: {
-                    panel.openBatterySettings()
-                }
-            }
-        }
-
         // Internet controls
         Item {
             id: internetArea
             Button {
                 id: internetButton
-                x: -35
+                x: -70
                 width: 24
                 height: 24
                 anchors.verticalCenter: parent.verticalCenter
@@ -198,7 +175,7 @@ ApplicationWindow {
             id: audioArea
             Button {
                 id: audioButton
-                x: -15
+                x: -45
                 width: 24
                 height: 24
                 anchors.verticalCenter: parent.verticalCenter
@@ -213,6 +190,29 @@ ApplicationWindow {
                 }
                 onClicked: {
                     panel.openAudioSettings()
+                }
+            }
+        }
+
+        // Battery
+        Item {
+            id: batteryArea
+            Button {
+                id: batteryButton
+                x: -20
+                width: 24
+                height: 24
+                anchors.verticalCenter: parent.verticalCenter
+                background: Rectangle {
+                    color: batteryButton.hovered ? darkmacdark : darkmacdarkest
+                    radius: 4
+                }
+                contentItem: Image {
+                    source: "qrc:/Images/battery.png"
+                    anchors.centerIn: parent
+                }
+                onClicked: {
+                    panel.openBatterySettings()
                 }
             }
         }
