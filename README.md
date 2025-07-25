@@ -22,7 +22,7 @@
 ### Dependencies:
 
 ```
-sudo apt install qtcreator qt6-base-dev build-essential network-manager-gnome xdotool wmctrl openbox picom g++ xserver-xephyr libx11-dev libxinerama-dev libxrandr-dev cmake make
+sudo apt install qtcreator qt6-base-dev build-essential network-manager-gnome xdotool wmctrl openbox picom feh g++ xserver-xephyr libx11-dev libxinerama-dev libxrandr-dev cmake make
 ```
 
 You will also need to install QT Quick.
