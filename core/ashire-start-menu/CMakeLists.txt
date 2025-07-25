@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(ashire_start_menu VERSION 0.1 LANGUAGES CXX)
+project(ashire_start_menu VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -8,7 +8,7 @@ find_package(Qt6 REQUIRED COMPONENTS Quick)
 find_package(Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt6 REQUIRED COMPONENTS Core)
 
-qt_standard_project_setup(REQUIRES 6.8)
+qt_standard_project_setup(REQUIRES 6.4)
 
 qt_add_executable(appashire_start_menu
     main.cpp
