@@ -12,7 +12,7 @@ export DESKTOP_SESSION=Ashire
 
 # Start Window Manager and compositor (until AshireWM is made)
 openbox &
-picom -b &
+picom -bc &
 
 # Start Panel
 ashire-panel &
