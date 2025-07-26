@@ -311,7 +311,7 @@ ApplicationWindow {
             width: 80
             height: 30
             Text {
-                x: 6
+                x: 12
                 y: 6
                 text: "Shutdown"
                 color: "white"
