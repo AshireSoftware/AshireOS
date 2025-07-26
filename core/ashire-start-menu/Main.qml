@@ -156,7 +156,7 @@ ApplicationWindow {
         Button {
             id: usernameButton
             x: 500 - width - 29
-            y: 128 + 4 + 10
+            y: 144
             width: 128
             height: 40
             text: "Kiwi"
@@ -185,7 +185,7 @@ ApplicationWindow {
         Button {
             id: documentsButton
             x: 500 - width - 29
-            y: 178 + 10
+            y: 144 + 50 * 1
             width: 128
             height: 40
             text: "Documents"
@@ -215,7 +215,7 @@ ApplicationWindow {
         Button {
             id: picturesButton
             x: 500 - width - 29
-            y: 228 + 10
+            y: 144 + 50 * 2
             width: 128
             height: 40
             text: "Pictures"
@@ -245,7 +245,7 @@ ApplicationWindow {
         Button {
             id: videosButton
             x: 500 - width - 29
-            y: 278 + 10
+            y: 144 + 50 * 3
             width: 128
             height: 40
             text: "Videos"
@@ -275,7 +275,7 @@ ApplicationWindow {
         Button {
             id: musicButton
             x: 500 - width - 29
-            y: 328 + 10
+            y: 144 + 50 * 4
             width: 128
             height: 40
             text: "Music"
