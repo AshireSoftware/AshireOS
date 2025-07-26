@@ -23,6 +23,8 @@ ApplicationWindow {
     property string darkmacdarkest: "#1e1e1e"
     property string darkmacdark:    "#292929"
 
+    property int rightsidebuttonspos: 343
+
     // Start Menu outline #1
     Rectangle {
         x: 1
@@ -155,7 +157,7 @@ ApplicationWindow {
         // Display username
         Button {
             id: usernameButton
-            x: 500 - width - 29
+            x: rightsidebuttonspos
             y: 144
             width: 128
             height: 40
@@ -184,7 +186,7 @@ ApplicationWindow {
         // Link Documents
         Button {
             id: documentsButton
-            x: 500 - width - 29
+            x: rightsidebuttonspos
             y: 144 + 50 * 1
             width: 128
             height: 40
@@ -214,7 +216,7 @@ ApplicationWindow {
         // Link Pictures
         Button {
             id: picturesButton
-            x: 500 - width - 29
+            x: rightsidebuttonspos
             y: 144 + 50 * 2
             width: 128
             height: 40
@@ -244,7 +246,7 @@ ApplicationWindow {
         // Link Videos
         Button {
             id: videosButton
-            x: 500 - width - 29
+            x: rightsidebuttonspos
             y: 144 + 50 * 3
             width: 128
             height: 40
@@ -274,7 +276,7 @@ ApplicationWindow {
         // Link Music
         Button {
             id: musicButton
-            x: 500 - width - 29
+            x: rightsidebuttonspos
             y: 144 + 50 * 4
             width: 128
             height: 40
@@ -304,7 +306,7 @@ ApplicationWindow {
         // Shutdown button
         Button {
             id: shutdownButton
-            x: 500 - width - 29 - 24
+            x: rightsidebuttonspos + 24
             y: 600 - 64
             width: 80
             height: 30
